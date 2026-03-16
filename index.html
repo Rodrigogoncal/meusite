@@ -11,37 +11,73 @@
 
 <body>
 
-    <div class="container"></div>
-  <header>
-    <h1>Meu site</h1>
+   <header class="hero" id="topo">
+    <div class="hero-conteudo">
+        <div class="hero-texto">
+            <h1>Rodrigo Gonçalves</h1>
+            <p>Planejador, Analista de Informações, estudante e futuro professor da área de tecnologia.</p>
 
-  </header>
+            <div class="hero-botoes">
+                <a href="#projetos" class="btn">Ver projetos</a>
+                <a href="#contato" class="btn btn-secundario">Contato</a>
+            </div>
+        </div>
+
+        <div class="hero-foto">
+            <img src="imagens/rodrigo.png" alt="Foto de Rodrigo">
+        </div>
+    </div>
+</header>
 
   <nav>
 
-   <a href="#">Home</a>
-   <a href="#">Sobre</a>
-   <a href="">Contato</a>
+   <a href="#topo">Home</a>
+   <a href="#sobre">Sobre</a>
+   <a href="#contato">Contato</a>
+   <a href="#projetos">Projetos</a>
   </nav>
 
 <main>
 
   <section>
     <h2>Sejam bem vindos!</h2>
-    <p> Esse é um exemplo de site com Html e Css.</p>
+    <p> Esse é um exemplo de desenvolvimento Web.</p>
     </section>
 
-    <section>
+    <section id="contato">
+      <H2>Contato</H2>
+
+      <p><strong>Email:</strong> <a href="mailto:rodrigogoncalves49702@gmail.com">rodrigogoncalves49702@gmail.com</a></p>
+      <p><strong>Telefone:</strong> <a href="tel:+5518996731296">(18) 99673-1296</a></p>
+       <p><strong>GitHub:</strong> <a href="https://github.com/Rodrigogoncal" target="_blank">github.com/Rodrigogoncal</a></p>
+
+    </section>
+
+    <section id="sobre">
       <h2>Sobre mim</h2>
-      <p>Site Criado para praticar desenvolvimento Web.</p>
+      <p>Sou estudante da área de tecnologia,
+         atualmente desenvolvendo projetos em HTML, CSS e JavaScript.
+         Desenvolvendo também APIs REST com java e outras ferraments. 
+         Estou construindo meu portfólio para mostrar minha evolução e meus trabalhos..</p>
     </section>
 
-    <section>
-      <h2>Contato</h2>
-      <p>Email: rodrigogoncalves49702@gmail.com</p>
+    <section id="habilidades">
+      <h2>Habilidades</h2>
+      
+      <div class="habilidades-grid">
+          <span class="skill">HTML</span>
+          <span class="skill">CSS</span>
+          <span class="skill">JavaScript</span>
+          <span class="skill">Java</span>
+          <span class="skill">Python</span>
+          <span class="skill">MySQL</span>
+          <span class="skill">Power BI</span>
+      </div>
     </section>
 
-    <section class="projetos">
+    
+
+    <section id="projetos">
       <h2>Projetos</h2>
 
       <div class="cards">
@@ -52,7 +88,9 @@
             <div class="overlay">Ver imagem 🔍</div>
           </div>
           <h3>Projeto 1</h3>
+          <p class="tecnologias">HTML • CSS</p>
           <p>Primeiro projeto de estudo em HTML e CSS.</p>
+          <a href="#" class="btn-projeto">Ver projeto</a>
         </div>
 
         <div class="card">
@@ -61,7 +99,9 @@
             <div class="overlay">Ver imagem 🔍</div>
         </div>
           <h3>Projeto 2</h3>
+          <p class="tecnologias">Estrutura do site.</p>
           <p>Página criada para praticar a estrutura de um site.</p>
+          <a href="#" class="btn-projeto">Ver projeto</a>
         </div>
 
       <div class="card">
@@ -70,7 +110,9 @@
           <div class="overlay">Ver imagem 🔍</div>
       </div>
         <h3>Projeto 3</h3>
+      <p class="tecnologias">Estilização</p>  
       <p>Experimentos com Layout e estilização.</p>
+      <a href="#" class="btn-projeto">Ver projeto</a>
       </div>
 
       </div>
@@ -111,6 +153,4 @@ lightbox.style.display = "none"
 
 </script>
 </body>
-
 </html>
-
