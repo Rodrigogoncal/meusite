@@ -407,7 +407,7 @@ section a:hover {
         padding: 28px 16px;
     }
 
-    .hero-conteudo{
+    .hero-conteudo {
        display: flex;
         flex-direction: column;
         text-align: center;
