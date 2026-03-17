@@ -404,10 +404,12 @@ section a:hover {
 @media (max-width: 768px){
 
   .hero{
-        padding: 24px 14px;
+        padding: 28px 16px;
     }
 
     .hero-conteudo{
+       display: flex;
+        flex-direction: column;
         gap: 16px;
     }
 
