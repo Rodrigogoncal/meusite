@@ -257,6 +257,7 @@ transform:scale(1.1);
 
 
 .hero-botoes{
+    justify-content: center;
     display:flex;
     gap:15px;
     flex-wrap:wrap;
@@ -294,6 +295,8 @@ transform:scale(1.1);
 }
 
 .btn {
+
+    
     background-color: white;
     color: #333;
     padding: 14px 22px; 
@@ -404,36 +407,42 @@ section a:hover {
 @media (max-width: 768px){
 
   .hero{
-        padding: 28px 16px;
+        padding: 24px 14px;
     }
 
-    .hero-conteudo {
-       display: flex;
+    .hero-conteudo{
+        display: flex;
         flex-direction: column;
         text-align: center;
         gap: 16px;
     }
 
     .hero-texto {
+        text-align: center;
         order: 2;
     }
 
     .hero-texto h1{
-        font-size: 30px;
-    
+       
+        font-size: 30px;   
     }
 
-    .hero-texto p {
+
+    .hero-texto p{
+    
         font-size: 15px;
         margin-bottom: 15px;
-        {
-       
+    }
+
+
     .hero-botoes{
+
         display: flex;
         justify-content: center;
         align-items: center;
         gap: 12px;
         flex-wrap: wrap;
+        width: 100%;
     }
 
     .hero-foto {
@@ -450,11 +459,12 @@ section a:hover {
 
 
     .cards {
+        display: flex;
         flex-direction: column;
     }
 
     .btn {
-        justify-content: center;
+
         padding: 9px 16px;
         font-size: 15px;
     }
