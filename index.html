@@ -1,155 +1,154 @@
 <!DOCTYPE html>
-<html lang="por">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu site</title>
-     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>Portfólio | Rodrigo Gonçalves</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-   
 </head>
-
 <body>
 
-   <header class="hero" id="topo">
-    <div class="hero-conteudo">
-        <div class="hero-texto">
-            <h1>Rodrigo Gonçalves</h1>
-            <p>Planejador, Analista de Informações, estudante e futuro professor da área de tecnologia.</p>
+    <header class="hero" id="topo">
+        <div class="hero-conteudo">
+            <div class="hero-texto">
+                <h1>Rodrigo Gonçalves</h1>
+                <p>Planejador, especialista em automação e eletrônica industrial, estudante de Engenharia da Computação e futuro professor.</p>
 
-            <div class="hero-botoes">
-                <a href="#projetos" class="btn btn-primary">Ver projetos</a>
-                <a href="#contato" class="btn btn-secundario">Contato</a>
+                <div class="hero-botoes">
+                    <a href="#projetos" class="btn">Ver projetos</a>
+                    <a href="#contato" class="btn bnt-secundario">Contato</a>
+                </div>
+            </div>
+
+            <div class="hero-foto">
+                <img src="imagens/rodrigo.png" alt="Foto de perfil de Rodrigo Gonçalves">
             </div>
         </div>
+    </header>
 
-        <div class="hero-foto">
-            <img src="imagens/rodrigo.png" alt="">
-        </div>
-    </div>
-</header>
+    <nav>
+        <a href="#topo">Home</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#habilidades">Habilidades</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#contato">Contato</a>
+    </nav>
 
-  <nav>
+    <main>
+        <section>
+            <h2>Seja bem-vindo!</h2>
+            <p>Este portfólio reúne projetos práticos desenvolvidos com foco em engenharia, desenvolvimento web, análise de dados e automação. Fique à vontade para explorar meu trabalho e conhecer um pouco mais sobre minha trajetória e soluções tecnológicas.</p>
+        </section>
 
-   <a href="#topo">Home</a>
-   <a href="#sobre">Sobre</a>
-   <a href="#contato">Contato</a>
-   <a href="#projetos">Projetos</a>
-  </nav>
+        <section id="sobre">
+            <h2>Sobre mim</h2>
+            <p>Sou estudante de Engenharia da Computação na Univesp, formado em Sistemas para Internet e pós-graduado em Automação Industrial. Atuo como planejador e especialista, unindo o hardware e o software através do desenvolvimento, análise de dados e automação de processos.</p>
+            <p>Utilizo tecnologias como Python, JavaScript, Flask, bancos de dados (SQLite, MongoDB) e Power BI para transformar desafios complexos em soluções práticas, criando aplicações e dashboards que unem organização e eficiência.</p>
+        </section>
 
-<main>
+        <section id="habilidades">
+            <h2>Habilidades Técnicas</h2>
+            <div class="habilidades-grid">
+                <span class="skill">Python & Flask</span>
+                <span class="skill">JavaScript</span>
+                <span class="skill">HTML & CSS</span>
+                <span class="skill">Power BI & DAX</span>
+                <span class="skill">MongoDB & SQLite</span>
+                <span class="skill">Automação Industrial</span>
+                <span class="skill">Eletrônica</span>
+            </div>
+        </section>
 
-  <section>
-    <h2>Sejam bem vindos!</h2>
-    <p> Este portfólio reúne projetos desenvolvidos com foco em programação, desenvolvimento web, análise de dados e automação.
-        Fique à vontade para explorar meu trabalho e conhecer um pouco mais sobre minha trajetória na área de tecnologia.</p>
-    </section>
+        <section id="projetos">
+            <h2>Projetos em Destaque</h2>
 
-    <section id="contato">
-      <H2>Contato</H2>
+            <div class="cards">
+                <!-- Projeto 1 -->
+                <div class="card">
+                    <div class="img-container">
+                        <img src="imagens/projeto1.png" alt="Sistema de Monitoramento de Energia"> 
+                        <div class="overlay">Ver imagem 🔍</div>
+                    </div>
+                    <h3>Monitoramento de Energia</h3>
+                    <p class="tecnologias">Python • Render • UptimeRobot</p>
+                    <p>Aplicação web para monitoramento de energia com gráficos interativos de consumo e sistema automatizado de alertas hospedado na nuvem.</p>
+                    <a href="https://github.com/Rodrigogoncal" target="_blank" class="btn-projeto">Ver repositório</a>
+                </div>
 
-      <p><strong>Email:</strong> <a href="mailto:rodrigogoncalves49702@gmail.com">rodrigogoncalves49702@gmail.com</a></p>
-      <p><strong>Telefone:</strong> <a href="tel:+5518996731296">(18) 99673-1296</a></p>
-       <p><strong>GitHub:</strong> <a href="https://github.com/Rodrigogoncal" target="_blank">github.com/Rodrigogoncal</a></p>
+                <!-- Projeto 2 -->
+                <div class="card">
+                    <div class="img-container">
+                        <img src="imagens/projeto2.jpg" alt="Dashboard Power BI"> 
+                        <div class="overlay">Ver imagem 🔍</div>
+                    </div>
+                    <h3>Dashboards de Testes</h3>
+                    <p class="tecnologias">Power BI • Excel • DAX</p>
+                    <p>Painéis de visualização com fórmulas DAX e cartões de KPI focados no monitoramento e análise de dados de testes técnicos estruturais.</p>
+                    <a href="https://github.com/Rodrigogoncal" target="_blank" class="btn-projeto">Ver projeto</a>
+                </div>
 
-    </section>
+                <!-- Projeto 3 -->
+                <div class="card">
+                    <div class="img-container">
+                        <img src="imagens/projeto3.jpg" alt="Projeto MongoDB Clientes"> 
+                        <div class="overlay">Ver imagem 🔍</div>
+                    </div>
+                    <h3>Cluster de Dados "Clientes"</h3>
+                    <p class="tecnologias">MongoDB Atlas • Python</p>
+                    <p>Desenvolvimento e hospedagem de banco de dados em nuvem, estruturando operações CRUD para gestão eficiente de informações.</p>
+                    <a href="https://github.com/Rodrigogoncal" target="_blank" class="btn-projeto">Ver repositório</a>
+                </div>
+            </div>
+        </section>
 
-    <section id="sobre">
-      <h2>Sobre mim</h2>
-      <p>Sou estudante de Engenharia da Computação, formado em Sistemas para Internet e pós-graduado em Automação Industrial.
-          Atuo com desenvolvimento de software, análise de dados e automação de processos, utilizando tecnologias como Java, Python, JavaScript, Power BI e bancos de dados.
-          Gosto de transformar desafios em soluções práticas, criando aplicações que unem organização, eficiência e tecnologia. 
-          Este portfólio apresenta alguns dos projetos que desenvolvi durante minha formação e experiência profissional.</p>
-    </section>
-
-    <section id="habilidades">
-      <h2>Habilidades</h2>
-      
-      <div class="habilidades-grid">
-          <span class="skill">HTML</span>
-          <span class="skill">CSS</span>
-          <span class="skill">JavaScript</span>
-          <span class="skill">Java</span>
-          <span class="skill">Python</span>
-          <span class="skill">MySQL</span>
-          <span class="skill">Power BI</span>
-      </div>
-    </section>
-
-    
-
-    <section id="projetos">
-      <h2>Projetos</h2>
-
-      <div class="cards">
-
-        <div class="card">
-          <div class="img-container">
-            <img src="imagens/projeto1.png" alt="projeto01"> 
-            <div class="overlay">Ver imagem 🔍</div>
-          </div>
-          <h3>Projeto 1</h3>
-          <p class="tecnologias">HTML • CSS</p>
-          <p>Projeto de estudo em HTML e CSS.</p>
-          <a href="#" class="btn-projeto">Ver projeto</a>
-        </div>
-
-        <div class="card">
-          <div class="img-container">
-            <img src="imagens/projeto2.jpg" alt="projeto2"> 
-            <div class="overlay">Ver imagem 🔍</div>
-        </div>
-          <h3>Projeto 2</h3>
-          <p class="tecnologias">Estrutura do site.</p>
-          <p>Página criada para praticar a estrutura de um site.</p>
-          <a href="#" class="btn-projeto">Ver projeto</a>
-        </div>
-
-      <div class="card">
-         <div class="img-container">
-          <img src="imagens/projeto3.jpg" alt="projeto3"> 
-          <div class="overlay">Ver imagem 🔍</div>
-      </div>
-        <h3>Projeto 3</h3>
-      <p class="tecnologias">Estilização</p>  
-      <p>Experimentos com Layout e estilização.</p>
-      <a href="#" class="btn-projeto">Ver projeto</a>
-      </div>
-
-      </div>
-    </section>
-
+        <section id="contato" class="contato">
+            <h2>Contato</h2>
+            <p><strong>Email:</strong> <a href="mailto:rodrigogoncalves49702@gmail.com">rodrigogoncalves49702@gmail.com</a></p>
+            <p><strong>Telefone:</strong> <a href="tel:+5518996731296">(18) 99673-1296</a></p>
+            <p><strong>GitHub:</strong> <a href="https://github.com/Rodrigogoncal" target="_blank">github.com/Rodrigogoncal</a></p>
+            <p><strong>Localização:</strong> Presidente Epitácio, SP</p>
+        </section>
     </main>
 
-    <footer>2026 - Projeto em desenvolvimento</footer>
+    <footer>
+        <p>&copy; 2026 - Rodrigo Gonçalves | Projeto em desenvolvimento</p>
+    </footer>
 
     <div id="lightbox">
-      <span id="fechar">&times;</span>
-      <img id="lightbox-img">
+        <span id="fechar">&times;</span>
+        <img id="lightbox-img" alt="Imagem ampliada do projeto">
     </div>
 
     <script>
+        const imagens = document.querySelectorAll(".img-container");
+        const lightbox = document.getElementById("lightbox");
+        const lightboxImg = document.getElementById("lightbox-img");
+        const fechar = document.getElementById("fechar");
 
-const imagens = document.querySelectorAll(".card img")
-const lightbox = document.getElementById("lightbox")
-const lightboxImg = document.getElementById("lightbox-img")
-const fechar = document.getElementById("fechar")
+        imagens.forEach(container => {
+            container.addEventListener("click", () => {
+                const img = container.querySelector("img");
+                lightbox.style.display = "flex";
+                lightboxImg.src = img.src;
+            });
+        });
 
-imagens.forEach(img => {
-img.addEventListener("click", () => {
-lightbox.style.display = "flex"
-lightboxImg.src = img.src
-})
-})
+        fechar.addEventListener("click", () => {
+            lightbox.style.display = "none";
+        });
 
-fechar.addEventListener("click", () => {
-lightbox.style.display = "none"
-})
+        lightbox.addEventListener("click", (e) => {
+            if (e.target !== lightboxImg) {
+                lightbox.style.display = "none";
+            }
+        });
 
-lightbox.addEventListener("click", () => {
-lightbox.style.display = "none"
-})
-
-</script>
+        document.addEventListener("keydown", (e) => {
+            if (e.key === "Escape" && lightbox.style.display === "flex") {
+                lightbox.style.display = "none";
+            }
+        });
+    </script>
 </body>
 </html>
