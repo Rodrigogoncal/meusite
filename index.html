@@ -1,154 +1,220 @@
+
+
+Index · HTML
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio | Rodrigo Gonçalves</title>
+    <title>Rodrigo Gonçalves | Automação, dados e desenvolvimento</title>
+    <meta name="description" content="Portfólio de Rodrigo Gonçalves: monitoramento de energia, dashboards em Power BI e bancos de dados na nuvem. Automação industrial, dados e desenvolvimento web.">
+    <meta name="theme-color" content="#1E3A8A">
+ 
+    <!-- Pré-visualização ao compartilhar o link (WhatsApp, LinkedIn etc.) -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Rodrigo Gonçalves | Automação, dados e desenvolvimento">
+    <meta property="og:description" content="Projetos de monitoramento de energia, dashboards em Power BI e bancos de dados na nuvem.">
+    <meta property="og:url" content="https://rodrigogoncal.github.io/meusite/">
+    <meta property="og:image" content="https://rodrigogoncal.github.io/meusite/imagens/rodrigo.png">
+ 
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E⚡%3C/text%3E%3C/svg%3E">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
+ 
     <header class="hero" id="topo">
         <div class="hero-conteudo">
             <div class="hero-texto">
                 <h1>Rodrigo Gonçalves</h1>
+                <!-- TODO: trocar "Planejador" por algo mais específico (ex.: planejador de manutenção, de obras...) -->
                 <p>Planejador, especialista em automação e eletrônica industrial, estudante de Engenharia da Computação e futuro professor.</p>
-
+ 
                 <div class="hero-botoes">
                     <a href="#projetos" class="btn">Ver projetos</a>
-                    <a href="#contato" class="btn bnt-secundario">Contato</a>
+                    <a href="#contato" class="btn btn-secundario">Contato</a>
                 </div>
             </div>
-
+ 
             <div class="hero-foto">
                 <img src="imagens/rodrigo.png" alt="Foto de perfil de Rodrigo Gonçalves">
             </div>
         </div>
     </header>
-
-    <nav>
+ 
+    <nav aria-label="Navegação principal">
         <a href="#topo">Home</a>
         <a href="#sobre">Sobre</a>
         <a href="#habilidades">Habilidades</a>
         <a href="#projetos">Projetos</a>
         <a href="#contato">Contato</a>
     </nav>
-
+ 
     <main>
-        <section>
-            <h2>Seja bem-vindo!</h2>
-            <p>Este portfólio reúne projetos práticos desenvolvidos com foco em engenharia, desenvolvimento web, análise de dados e automação. Fique à vontade para explorar meu trabalho e conhecer um pouco mais sobre minha trajetória e soluções tecnológicas.</p>
-        </section>
-
         <section id="sobre">
             <h2>Sobre mim</h2>
-            <p>Sou estudante de Engenharia da Computação na Univesp, formado em Sistemas para Internet e pós-graduado em Automação Industrial. Atuo como planejador e especialista, unindo o hardware e o software através do desenvolvimento, análise de dados e automação de processos.</p>
-            <p>Utilizo tecnologias como Python, JavaScript, Flask, bancos de dados (SQLite, MongoDB) e Power BI para transformar desafios complexos em soluções práticas, criando aplicações e dashboards que unem organização e eficiência.</p>
+            <p>Sou estudante de Engenharia da Computação na Univesp, formado em Sistemas para Internet e pós-graduado em Automação Industrial. Atuo como planejador e especialista, unindo hardware e software por meio de desenvolvimento, análise de dados e automação de processos.</p>
+            <p>Uso Python, JavaScript, Flask, bancos de dados (SQLite e MongoDB) e Power BI para transformar problemas do dia a dia técnico em aplicações e dashboards que dão mais organização e eficiência ao trabalho.</p>
         </section>
-
+ 
         <section id="habilidades">
-            <h2>Habilidades Técnicas</h2>
-            <div class="habilidades-grid">
-                <span class="skill">Python & Flask</span>
-                <span class="skill">JavaScript</span>
-                <span class="skill">HTML & CSS</span>
-                <span class="skill">Power BI & DAX</span>
-                <span class="skill">MongoDB & SQLite</span>
-                <span class="skill">Automação Industrial</span>
-                <span class="skill">Eletrônica</span>
+            <h2>Habilidades técnicas</h2>
+ 
+            <div class="grupo-habilidades">
+                <h3>Desenvolvimento</h3>
+                <ul class="habilidades-grid">
+                    <li class="skill">Python</li>
+                    <li class="skill">Flask</li>
+                    <li class="skill">JavaScript</li>
+                    <li class="skill">HTML e CSS</li>
+                </ul>
+            </div>
+ 
+            <div class="grupo-habilidades">
+                <h3>Dados</h3>
+                <ul class="habilidades-grid">
+                    <li class="skill">Power BI e DAX</li>
+                    <li class="skill">MongoDB</li>
+                    <li class="skill">SQLite</li>
+                </ul>
+            </div>
+ 
+            <div class="grupo-habilidades">
+                <h3>Automação e eletrônica</h3>
+                <ul class="habilidades-grid">
+                    <li class="skill">Automação industrial</li>
+                    <li class="skill">Eletrônica</li>
+                </ul>
             </div>
         </section>
-
+ 
         <section id="projetos">
-            <h2>Projetos em Destaque</h2>
-
+            <h2>Projetos em destaque</h2>
+ 
             <div class="cards">
+ 
                 <!-- Projeto 1 -->
-                <div class="card">
-                    <div class="img-container">
-                        <img src="imagens/Consumo.png" alt="Sistema de Monitoramento de Energia"> 
-                        <div class="overlay">Ver imagem 🔍</div>
-                    </div>
-                    <h3>Monitoramento de Energia</h3>
+                <article class="card">
+                    <button type="button" class="img-container" aria-label="Ampliar imagem do projeto Monitoramento de Energia">
+                        <img src="imagens/Consumo.png" alt="Gráfico de consumo do sistema de monitoramento de energia" loading="lazy">
+                        <span class="overlay" aria-hidden="true">Ver imagem 🔍</span>
+                    </button>
+                    <h3>Monitoramento de energia</h3>
                     <p class="tecnologias">Python • Render • UptimeRobot</p>
-                    <p>Aplicação web para monitoramento de energia com gráficos interativos de consumo e sistema automatizado de alertas hospedado na nuvem.</p>
-                    <a href="https://github.com/Rodrigogoncal" target="_blank" class="btn-projeto">Ver repositório</a>
-                </div>
-
+                    <p>Aplicação web que mostra o consumo de energia em gráficos interativos e exibe um alerta no topo da tela quando o consumo passa do limite definido. Hospedada na nuvem (Render) e acompanhada pelo UptimeRobot.</p>
+                    <div class="card-links">
+                        <!-- TODO: trocar pelo link do repositório, ex.: https://github.com/Rodrigogoncal/NOME-DO-REPOSITORIO -->
+                        <a href="https://github.com/Rodrigogoncal" target="_blank" rel="noopener" class="btn-projeto">Ver repositório</a>
+                        <!-- TODO: remover os comentários abaixo e colocar o link da demo no Render
+                        <a href="https://SEU-APP.onrender.com" target="_blank" rel="noopener" class="btn-projeto btn-projeto-secundario">Ver demo</a>
+                        -->
+                    </div>
+                </article>
+ 
                 <!-- Projeto 2 -->
-                <div class="card">
-                    <div class="img-container">
-                        <img src="imagens/dashboard_total.jpg" alt="Dashboard Power BI"> 
-                        <div class="overlay">Ver imagem 🔍</div>
-                    </div>
-                    <h3>Dashboards de Testes</h3>
+                <article class="card">
+                    <button type="button" class="img-container" aria-label="Ampliar imagem do projeto Dashboards de Testes">
+                        <img src="imagens/dashboard_total.jpg" alt="Dashboard em Power BI com cartões de KPI e gráficos de testes técnicos" loading="lazy">
+                        <span class="overlay" aria-hidden="true">Ver imagem 🔍</span>
+                    </button>
+                    <h3>Dashboards de testes</h3>
                     <p class="tecnologias">Power BI • Excel • DAX</p>
-                    <p>Painéis de visualização com fórmulas DAX e cartões de KPI focados no monitoramento e análise de dados de testes técnicos estruturais.</p>
-                    <a href="https://github.com/Rodrigogoncal" target="_blank" class="btn-projeto">Ver projeto</a>
-                </div>
-
-                <!-- Projeto 3 -->
-                <div class="card">
-                    <div class="img-container">
-                        <img src="imagens/projeto3.jpg" alt="Projeto MongoDB Clientes"> 
-                        <div class="overlay">Ver imagem 🔍</div>
+                    <p>Painéis com fórmulas DAX e cartões de KPI para acompanhar e analisar os resultados de testes técnicos estruturais em um só lugar.</p>
+                    <div class="card-links">
+                        <!-- TODO: trocar pelo link do projeto -->
+                        <a href="https://github.com/Rodrigogoncal" target="_blank" rel="noopener" class="btn-projeto">Ver projeto</a>
                     </div>
-                    <h3>Cluster de Dados "Clientes"</h3>
+                </article>
+ 
+                <!-- Projeto 3 -->
+                <article class="card">
+                    <button type="button" class="img-container" aria-label="Ampliar imagem do projeto Cluster de Dados Clientes">
+                        <img src="imagens/projeto3.jpg" alt="Cluster de dados Clientes no MongoDB Atlas" loading="lazy">
+                        <span class="overlay" aria-hidden="true">Ver imagem 🔍</span>
+                    </button>
+                    <h3>Cluster de dados "Clientes"</h3>
                     <p class="tecnologias">MongoDB Atlas • Python</p>
-                    <p>Desenvolvimento e hospedagem de banco de dados em nuvem, estruturando operações CRUD para gestão eficiente de informações.</p>
-                    <a href="https://github.com/Rodrigogoncal" target="_blank" class="btn-projeto">Ver repositório</a>
-                </div>
+                    <p>Banco de dados hospedado na nuvem com operações CRUD em Python (criar, consultar, atualizar e excluir registros de clientes).</p>
+                    <div class="card-links">
+                        <!-- TODO: trocar pelo link do repositório -->
+                        <a href="https://github.com/Rodrigogoncal" target="_blank" rel="noopener" class="btn-projeto">Ver repositório</a>
+                    </div>
+                </article>
+ 
+                <!--
+                TODO: Projeto 4 (controle de pendências da obra). Para ativar:
+                1) apague as marcas de comentário desta caixa;
+                2) coloque um print em imagens/pendencias.jpg;
+                3) ajuste o texto e o link.
+ 
+                <article class="card">
+                    <button type="button" class="img-container" aria-label="Ampliar imagem do projeto Controle de Pendências da Obra">
+                        <img src="imagens/pendencias.jpg" alt="Tela do controle de pendências de obra" loading="lazy">
+                        <span class="overlay" aria-hidden="true">Ver imagem 🔍</span>
+                    </button>
+                    <h3>Controle de pendências de obra</h3>
+                    <p class="tecnologias">HTML • CSS</p>
+                    <p>Painel para acompanhar as pendências de obra por disciplina (tubulação e elétrica).</p>
+                    <div class="card-links">
+                        <a href="LINK-DO-PROJETO" target="_blank" rel="noopener" class="btn-projeto">Ver projeto</a>
+                    </div>
+                </article>
+                -->
+ 
             </div>
         </section>
-
+ 
         <section id="contato" class="contato">
             <h2>Contato</h2>
-            <p><strong>Email:</strong> <a href="mailto:rodrigogoncalves49702@gmail.com">rodrigogoncalves49702@gmail.com</a></p>
-            <p><strong>Telefone:</strong> <a href="tel:+5518996731296">(18) 99673-1296</a></p>
-            <p><strong>GitHub:</strong> <a href="https://github.com/Rodrigogoncal" target="_blank">github.com/Rodrigogoncal</a></p>
-            <p><strong>Localização:</strong> Presidente Epitácio, SP</p>
+            <ul class="contato-lista">
+                <li><strong>E-mail:</strong> <a href="mailto:rodrigogoncalves49702@gmail.com">rodrigogoncalves49702@gmail.com</a></li>
+                <li><strong>Telefone:</strong> <a href="tel:+5518996731296">(18) 99673-1296</a></li>
+                <li><strong>GitHub:</strong> <a href="https://github.com/Rodrigogoncal" target="_blank" rel="noopener">github.com/Rodrigogoncal</a></li>
+                <!-- TODO: ativar e colocar o seu LinkedIn
+                <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/SEU-PERFIL" target="_blank" rel="noopener">linkedin.com/in/SEU-PERFIL</a></li>
+                -->
+                <li><strong>Localização:</strong> Presidente Epitácio, SP</li>
+            </ul>
+            <!-- TODO: ativar quando tiver o currículo em PDF (salve como curriculo.pdf na pasta do site)
+            <p><a href="curriculo.pdf" class="btn-projeto" download>Baixar currículo</a></p>
+            -->
         </section>
     </main>
-
+ 
     <footer>
-        <p>&copy; 2026 - Rodrigo Gonçalves | Projeto em desenvolvimento</p>
+        <p>&copy; 2026 Rodrigo Gonçalves</p>
     </footer>
-
-    <div id="lightbox">
-        <span id="fechar">&times;</span>
-        <img id="lightbox-img" alt="Imagem ampliada do projeto">
-    </div>
-
+ 
+    <dialog id="lightbox" aria-label="Imagem ampliada do projeto">
+        <button type="button" id="fechar" aria-label="Fechar imagem">&times;</button>
+        <img id="lightbox-img" alt="">
+    </dialog>
+ 
     <script>
-        const imagens = document.querySelectorAll(".img-container");
         const lightbox = document.getElementById("lightbox");
         const lightboxImg = document.getElementById("lightbox-img");
-        const fechar = document.getElementById("fechar");
-
-        imagens.forEach(container => {
-            container.addEventListener("click", () => {
-                const img = container.querySelector("img");
-                lightbox.style.display = "flex";
-                lightboxImg.src = img.src;
+ 
+        document.querySelectorAll(".img-container").forEach(botao => {
+            botao.addEventListener("click", () => {
+                const img = botao.querySelector("img");
+                lightboxImg.src = img.currentSrc || img.src;
+                lightboxImg.alt = img.alt;
+                lightbox.showModal();
             });
         });
-
-        fechar.addEventListener("click", () => {
-            lightbox.style.display = "none";
-        });
-
+ 
+        // Fecha ao clicar fora da imagem (inclui o botão de fechar).
+        // A tecla Esc já fecha sozinha, e o foco volta ao botão que abriu.
         lightbox.addEventListener("click", (e) => {
             if (e.target !== lightboxImg) {
-                lightbox.style.display = "none";
-            }
-        });
-
-        document.addEventListener("keydown", (e) => {
-            if (e.key === "Escape" && lightbox.style.display === "flex") {
-                lightbox.style.display = "none";
+                lightbox.close();
             }
         });
     </script>
 </body>
 </html>
+ 
+Claude terminou a resposta
+
