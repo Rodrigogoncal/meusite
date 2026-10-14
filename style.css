@@ -221,13 +221,11 @@ header h1 {
 }
 
 .hero-foto {
-    width: 200px;
-    height: 200px;
+    width: 220px;
+    height: 220px;
     border-radius: 50%;
     border: 5px solid white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background-color: #e2e8f0;   /* preenche se a foto tiver fundo transparente */
     overflow: hidden;
     box-shadow: 0 10px 25px rgba(0,0,0,0.25);
     flex-shrink: 0;
@@ -255,8 +253,11 @@ header h1 {
 .hero-foto img {
     width: 100%;
     height: 100%;
+    display: block;
     object-fit: cover;
-   
+    object-position: center 20%;   /* mantém o rosto na parte de cima */
+    transform: scale(1.25);        /* aproxima e esconde as laterais */
+    transform-origin: center 25%;
 }
 
 .btn {
