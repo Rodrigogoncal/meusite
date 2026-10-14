@@ -256,7 +256,7 @@ header h1 {
     display: block;
     object-fit: cover;
     object-position: center 20%;   /* mantém o rosto na parte de cima */
-    transform: scale(1.5);        /* aproxima e esconde as laterais */
+    transform: scale(1.8);        /* aproxima e esconde as laterais */
     transform-origin: center 25%;
 }
 
